@@ -1,0 +1,23 @@
+
+@media (min-width: 576px){
+.navbar-expand-sm {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: space-between;
+}
+.log{
+    justify-content: flex-end;
+}
+.carousel-item {
+    height: 32rem;
+}
+.col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+}
+.round{
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
