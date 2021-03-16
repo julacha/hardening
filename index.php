@@ -16,24 +16,26 @@
         <div class="row">
             <div class="col-sm-12">
                 <nav class="navbar fixed-top navbar navbar-dark bg-dark navbar-expand-sm">
-                    <ul class="navbar-nav">
-                        <a class="navbar-brand" href="#">Brand </a>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
+
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="log">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                        <button type="submit" class="btn btn-primary">&nbsp;Login&nbsp;</button>
+                        <button type="submit" class="btn btn-primary signbtn">Sign in</button>
+                        <button type="submit" class="btn btn-primary regbtn">&nbsp;Login&nbsp;</button>
                     </div>
                     <!-- <span class="navbar-text">
                         Navbar text
@@ -71,6 +73,8 @@
                                 <p>Some representative placeholder content for the third slide.</p>
                             </div>
                         </div>
+                        <div class="reg-box" style="background-color:white;"></div>
+                        <div class="auth-box" style="background-color:white;"></div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -84,7 +88,15 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-4 round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"></rect><text x="30%" y="50%" fill="#000" dy=".3em">1 posms</text>
+                </svg>
+                <h2>Heading</h2>
+                <p>Apraksts</p>
+                <a class="btn btn-secondary" href="#">View details »</a>
+            </div>
+            <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <title>Placeholder</title>
                     <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
                 </svg>
@@ -92,7 +104,7 @@
                 <p>Apraksts</p>
                 <a class="btn btn-secondary" href="#">View details »</a>
             </div>
-            <div class="col-sm-4 round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <title>Placeholder</title>
                     <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
                 </svg>
@@ -100,7 +112,7 @@
                 <p>Apraksts</p>
                 <a class="btn btn-secondary" href="#">View details »</a>
             </div>
-            <div class="col-sm-4 round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <title>Placeholder</title>
                     <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
                 </svg>
