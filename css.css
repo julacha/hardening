@@ -19,5 +19,35 @@
 }
 .round{
     margin-bottom: 1.5rem;
+    margin-top: 3rem;
     text-align: center;
 }
+
+.background{
+    /* opacity: 0.5; */
+    z-index: 0;
+}
+
+.auth-box{
+display: none;
+}
+.auth-box.active{
+    display: block;
+    width: 30rem;
+    height: 20rem;
+    position: relative;
+    margin: 120px auto;
+    z-index: 100;
+}
+
+.reg-box{
+    display: none;
+    }
+    .reg-box.active{
+        display: block;
+        width: 30rem;
+        height: 20rem;
+        position: relative;
+        margin: 120px auto;
+        z-index: 100;
+    }
