@@ -14,27 +14,25 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
   modalTitle.textContent = 'New message to ' + recipient
   modalBodyInput.value = recipient
 })
-
+//-------------------------------------------------------------------
 let btn_sign = document.querySelector(".signbtn");
-let authbox =document.querySelector(".auth-box");
-
+let regbox =document.querySelector(".auth-box");
 
 btn_sign.addEventListener("click", function () { 
-  if (authbox.classList.contains("active")) {
-    authbox.classList.remove("active");
-  } else {
-    authbox.classList.add("active");
-  }
-});
-
-let btn_reg = document.querySelector(".regbtn");
-let regbox =document.querySelector(".reg-box");
-
-
-btn_reg.addEventListener("click", function () { 
   if (regbox.classList.contains("active")) {
     regbox.classList.remove("active");
   } else {
     regbox.classList.add("active");
+  }
+});
+
+let btn_log = document.querySelector(".logbtn");
+let logbox =document.querySelector(".log-box");
+
+btn_log.addEventListener("click", function () { 
+  if (logbox.classList.contains("active")) {
+    logbox.classList.remove("active");
+  } else {
+    logbox.classList.add("active");
   }
 });

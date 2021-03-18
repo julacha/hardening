@@ -40,14 +40,31 @@ display: none;
     z-index: 100;
 }
 
-.reg-box{
+.auth-box{
     display: none;
     }
-    .reg-box.active{
-        display: block;
-        width: 30rem;
-        height: 20rem;
-        position: relative;
-        margin: 120px auto;
-        z-index: 100;
+.auth-box.active{
+    display: block;
+    width: 30rem;
+    height: 20rem;
+    position: relative;
+    margin: 120px auto;
+    z-index: 100;
+}
+text{
+    font-size: 4rem;
+    font-weight: 700;
+    fill:#007bff;
+}
+
+.log-box{
+    display: none;
     }
+.log-box.active{
+    display: block;
+    width: 30rem;
+    height: 20rem;
+    position: relative;
+    margin: 120px auto;
+    z-index: 100;
+}

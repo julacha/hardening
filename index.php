@@ -11,12 +11,12 @@
     <title>first_page</title>
 </head>
 
+
 <body>
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <nav class="navbar fixed-top navbar navbar-dark bg-dark navbar-expand-sm">
-
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -35,7 +35,7 @@
                     </div>
                     <div class="log">
                         <button type="submit" class="btn btn-primary signbtn">Sign in</button>
-                        <button type="submit" class="btn btn-primary regbtn">&nbsp;Login&nbsp;</button>
+                        <button type="submit" class="btn btn-primary logbtn">&nbsp;Login&nbsp;</button>
                     </div>
                     <!-- <span class="navbar-text">
                         Navbar text
@@ -73,54 +73,63 @@
                                 <p>Some representative placeholder content for the third slide.</p>
                             </div>
                         </div>
-                        <div class="reg-box" style="background-color:white;"></div>
-                        <div class="auth-box" style="background-color:white;"></div>
+                        <div class="log-box" style="background-color:white;">
+                            <?php
+                            include "logform.php";
+                            ?>
+                        </div>
+                        <div class="auth-box" style="background-color:white;">
+                            <?php
+                            include "regform.php";
+                            ?>
+                        </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#777"></rect><text x="30%" y="50%" fill="#000" dy=".3em">1 posms</text>
-                </svg>
-                <h2>Heading</h2>
-                <p>Apraksts</p>
-                <a class="btn btn-secondary" href="#">View details »</a>
-            </div>
-            <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                </svg>
-                <h2>Heading</h2>
-                <p>Apraksts</p>
-                <a class="btn btn-secondary" href="#">View details »</a>
-            </div>
-            <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                </svg>
-                <h2>Heading</h2>
-                <p>Apraksts</p>
-                <a class="btn btn-secondary" href="#">View details »</a>
-            </div>
-            <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                </svg>
-                <h2>Heading</h2>
-                <p>Apraksts</p>
-                <a class="btn btn-secondary" href="#">View details »</a>
-            </div>
+    </div>
+    <div class="row">
+        <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#FFFFFF"></rect><text x="36%" y="50%" fill="#000" dy=".3em">1</text>
+            </svg>
+            <h2>Heading</h2>
+            <p>Apraksts</p>
+            <a class="btn btn-secondary" href="#">View details »</a>
         </div>
+        <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#FFFFFF"></rect><text x="36%" y="50%" fill="#777" dy=".3em">2</text>
+            </svg>
+            <h2>Heading</h2>
+            <p>Apraksts</p>
+            <a class="btn btn-secondary" href="#">View details »</a>
+        </div>
+        <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#FFFFFF"></rect><text x="36%" y="50%" fill="#777" dy=".3em">3</text>
+            </svg>
+            <h2>Heading</h2>
+            <p>Apraksts</p>
+            <a class="btn btn-secondary" href="#">View details »</a>
+        </div>
+        <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#FFFFFF"></rect><text x="36%" y="50%" fill="#777" dy=".3em">4</text>
+            </svg>
+            <h2>Heading</h2>
+            <p>Apraksts</p>
+            <a class="btn btn-secondary" href="#">View details »</a>
+        </div>
+    </div>
     </div>
     <hr>
     <div class="row">
