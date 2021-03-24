@@ -1,3 +1,6 @@
+<?php
+require_once 'login.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,8 +37,8 @@
                         </ul>
                     </div>
                     <div class="log">
-                        <button type="submit" class="btn btn-primary signbtn">Sign in</button>
-                        <button type="submit" class="btn btn-primary logbtn">&nbsp;Login&nbsp;</button>
+                        <button type="submit" class="btn btn-primary signbtn" id="toggle-register">Sign in</button>
+                        <button type="submit" class="btn btn-primary logbtn" id="toggle-login">&nbsp;Login&nbsp;</button>
                     </div>
                     <!-- <span class="navbar-text">
                         Navbar text
@@ -73,12 +76,12 @@
                                 <p>Some representative placeholder content for the third slide.</p>
                             </div>
                         </div>
-                        <div class="log-box" style="background-color:white;">
+                        <div id="loginForm" class="log-box" style="background-color:white;">
                             <?php
                             include "logform.php";
                             ?>
                         </div>
-                        <div class="auth-box" style="background-color:white;">
+                        <div id="registerForm" class="auth-box" style="background-color:white;">
                             <?php
                             include "regform.php";
                             ?>
@@ -134,30 +137,28 @@
     <hr>
     <div class="row">
         <div class="col-sm-4">
-            <div class="mb-3">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
+            <div class="mb-3" id="bgcenter">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    Запустить модальное окно
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                        <input type="text" class="form-control" id="recipient-name">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="message-text" class="col-form-label">Message:</label>
-                                        <textarea class="form-control" id="message-text"></textarea>
-                                    </div>
-                                </form>
+                                ...
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Send message</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
                             </div>
                         </div>
                     </div>
@@ -184,6 +185,8 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </head>
     <script src="script.js"></script>
 </body>
 

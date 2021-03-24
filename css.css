@@ -16,6 +16,12 @@
     margin-bottom: 1.5rem;
     text-align: center;
 }
+#bgcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 }
 .round{
     margin-bottom: 1.5rem;

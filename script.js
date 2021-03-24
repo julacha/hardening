@@ -1,19 +1,10 @@
-var exampleModal = document.getElementById('exampleModal')
-exampleModal.addEventListener('show.bs.modal', function (event) {
-  // Button that triggered the modal
-  var button = event.relatedTarget
-  // Extract info from data-bs-* attributes
-  var recipient = button.getAttribute('data-bs-whatever')
-  // If necessary, you could initiate an AJAX request here
-  // and then do the updating in a callback.
-  //
-  // Update the modal's content.
-  var modalTitle = exampleModal.querySelector('.modal-title')
-  var modalBodyInput = exampleModal.querySelector('.modal-body input')
+let modal = document.getElementById('modal');
+let btnMessage = document.getElementById('message');
+let btnclose = document.getElementById('close');
 
-  modalTitle.textContent = 'New message to ' + recipient
-  modalBodyInput.value = recipient
-})
+btnMessage.addEventListener('click', function (event) {
+  $('#exampleModalCenter').modal(options);
+});
 //-------------------------------------------------------------------
 let btn_sign = document.querySelector(".signbtn");
 let regbox =document.querySelector(".auth-box");
@@ -23,6 +14,7 @@ btn_sign.addEventListener("click", function () {
     regbox.classList.remove("active");
   } else {
     regbox.classList.add("active");
+    logbox.classList.remove("active");
   }
 });
 
@@ -34,5 +26,7 @@ btn_log.addEventListener("click", function () {
     logbox.classList.remove("active");
   } else {
     logbox.classList.add("active");
+    regbox.classList.remove("active");
   }
 });
+
