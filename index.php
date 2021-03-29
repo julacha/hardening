@@ -104,33 +104,33 @@ require_once 'login.php';
                 <title>Placeholder</title>
                 <rect width="100%" height="100%" fill="#FFFFFF"></rect><text x="36%" y="50%" fill="#000" dy=".3em">1</text>
             </svg>
-            <h2>Heading</h2>
+            <h4>Подготови-<br>тельный этап</h4>
             <p>Apraksts</p>
-            <a class="btn btn-secondary" href="#">View details »</a>
+            <a class="btn btn-secondary" href="#">Описание »</a>
         </div>
         <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
                 <title>Placeholder</title>
                 <rect width="100%" height="100%" fill="#FFFFFF"></rect><text x="36%" y="50%" fill="#777" dy=".3em">2</text>
             </svg>
-            <h2>Heading</h2>
+            <h4>Контрастные<br>процедуры</h4>
             <p>Apraksts</p>
-            <a class="btn btn-secondary" href="#">View details »</a>
+            <a class="btn btn-secondary" href="#">Описание »</a>
         </div>
         <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
                 <title>Placeholder</title>
                 <rect width="100%" height="100%" fill="#FFFFFF"></rect><text x="36%" y="50%" fill="#777" dy=".3em">3</text>
             </svg>
-            <h2>Heading</h2>
+            <h4>Обливания</h4>
             <p>Apraksts</p>
-            <a class="btn btn-secondary" href="#">View details »</a>
+            <a class="btn btn-secondary" href="#">Описание »</a>
         </div>
         <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
                 <title>Placeholder</title>
                 <rect width="100%" height="100%" fill="#FFFFFF"></rect><text x="36%" y="50%" fill="#777" dy=".3em">4</text>
             </svg>
-            <h2>Heading</h2>
+            <h4>«Моржевание»</h4>
             <p>Apraksts</p>
-            <a class="btn btn-secondary" href="#">View details »</a>
+            <a class="btn btn-secondary" href="#">Описание »</a>
         </div>
     </div>
     </div>
@@ -139,7 +139,7 @@ require_once 'login.php';
         <div class="col-sm-4">
             <div class="mb-3" id="bgcenter">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                <button id="message" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
                     Запустить модальное окно
                 </button>
 
@@ -154,7 +154,16 @@ require_once 'login.php';
                                 </button>
                             </div>
                             <div class="modal-body">
-                                ...
+                                <div class="new-block">
+                                    <div class="logo">
+                                        <!-- <img src="#" alt="logo"> -->
+                                    </div>
+                                    <input type="date" class="form-control" id="date" name="date" placeholder="Дата" required>
+                                </div>
+                                <form action="" class="new-question">
+                                    <textarea name="question"></textarea>
+                                    <button type="submit">Отправить</button>
+                                </form>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -169,7 +178,22 @@ require_once 'login.php';
             <article class="blog-post">
                 <h2 class="blog-post-title">Title</h2>
                 <p class="blog-post-meta"> Mark, date</p>
-                <p class="text">Text</p>
+                <div class="question-list">
+                    <div class="template">
+                        <pre></pre>
+                        <!-- <a href="#" class="option"><svg viewBox="0 0 3 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="1.5" cy="1.5" r="1.5" fill="black" />
+                                <circle cx="1.5" cy="6.5" r="1.5" fill="black" />
+                                <circle cx="1.5" cy="11.5" r="1.5" fill="black" />
+                            </svg> -->
+                        </a>
+                        <a href="#" class="save">Save</a>
+                        <div class="options">
+                            <a href="#" class="edit">edit</a>
+                            <a href="#" class="remove">remove</a>
+                        </div>
+                    </div>
+                </div>
                 <hr>
         </div>
     </div>

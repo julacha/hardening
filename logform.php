@@ -4,8 +4,8 @@
         <input type="email" class="form-control" id="inputEmail" placeholder="Email">
     </div>
     <div class="col-12">
-        <label for="inputPassword4" class="form-label">Password</label>
-        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        <label for="inputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
     </div>
     <div class="col-12">
         <button type="submit" class="btn btn-primary loginbtn">Login</button>

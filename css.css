@@ -22,7 +22,6 @@
     align-items: center;
 }
 
-}
 .round{
     margin-bottom: 1.5rem;
     margin-top: 3rem;
@@ -73,4 +72,28 @@ text{
     position: relative;
     margin: 120px auto;
     z-index: 100;
+}
+.new-block{
+    display: flex;
+    flex-direction: row;
+}
+.logo {
+flex-shrink: 0;
+margin-right: 12px;
+width: 3.5rem;
+height: 3.5rem;
+background: dimgrey;
+}
+
+.form-control{
+    margin-top: 0.5rem;
+    width: 80%;
+}
+textarea{
+    width: 70%;
+}
+pre{
+    padding: 7px;
+    border: 1 px solid salmon;
+    background: sandybrown;
 }

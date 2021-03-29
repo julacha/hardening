@@ -9,8 +9,8 @@
     </div>
 
     <div class="col-12">
-        <label for="inputPassword4" class="form-label">Password</label>
-        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+        <label for="inputPassword2" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
     </div>
     <div class="row">
         <div class="col">
@@ -29,13 +29,13 @@
         </div>
         <div class="col">
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
                 <label class="form-check-label" for="flexRadioDefault1">
                     Default radio
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
                 <label class="form-check-label" for="flexRadioDefault2">
                     Default checked radio
                 </label>
