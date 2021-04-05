@@ -1,7 +1,13 @@
-<form id='register' action="auth.php" method="POST">
-    <div class="col-12">
-        <label for="inputEmail4" class="form-label">First name and last name</label>
-        <input type="text" class="form-control" placeholder="First name and last name" aria-label="Name">
+<form id='register' action="register.php" method="POST">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="name">Name</label>
+            <input type="name" class="form-control" id="name" name="name">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="surname">Surname</label>
+            <input type="surname" class="form-control" id="surname" name="surname">
+        </div>
     </div>
     <div class="col-12">
         <label for="inputEmail4" class="form-label">Email</label>
@@ -17,13 +23,13 @@
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                 <label class="form-check-label" for="flexRadioDefault1">
-                    Default radio
+                    1 posms
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                 <label class="form-check-label" for="flexRadioDefault2">
-                    Default checked radio
+                    2 posms
                 </label>
             </div>
         </div>
@@ -31,13 +37,13 @@
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
                 <label class="form-check-label" for="flexRadioDefault1">
-                    Default radio
+                    3 posms
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
                 <label class="form-check-label" for="flexRadioDefault2">
-                    Default checked radio
+                    4 posms
                 </label>
             </div>
         </div>

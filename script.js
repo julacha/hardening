@@ -7,7 +7,7 @@ function onQuestion (event){
   question.textContent = userquestion;
   document.querySelector('.question-list').append(question);
 }
-let options = {
+let options = { 
   'backdrop' : 'static'
 }
 let btnMessage = document.querySelector("#message");
