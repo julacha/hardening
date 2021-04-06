@@ -2,15 +2,21 @@
 
 include('config/db_conn.php');
 
-$name = mysqli_real_escape_string($conn, $_POST['name']);
-$surname = mysqli_real_escape_string($conn, $_POST['surname']);
-$email = mysqli_real_escape_string($conn, $_POST['email']);
-$password = mysqli_real_escape_string($conn, $_POST['password']);
+$post = $_POST;
+$email = $post['loginemail'];
+$password = $post['loginpassword'];
 
-$sql = "INSERT INTO users(name, surname, email, password) VALUES ('$name','$surname','$email','$password')";
+// $email = mysqli_real_escape_string($conn, $_POST['email']);
+// $password = mysqli_real_escape_string($conn, $_POST['password']);
 
-if (mysqli_query($conn, $sql)) {
-    echo "Success";
+$password = md5($password . "lalala");
+
+$query = "SELECT * FROM users WHERE  `email` = '$email' AND `password` = '$password'";
+$result = mysqli_query($conn, $query);
+$count = mysqli_num_rows($result);
+
+if ($count > 0) {
+    echo "Login Successful";
 } else {
-    echo 'query error:' . mysqli_error($conn);
+    echo "Login Not Successful";
 }

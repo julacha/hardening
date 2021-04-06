@@ -7,6 +7,8 @@ $surname = mysqli_real_escape_string($conn, $_POST['surname']);
 $email = mysqli_real_escape_string($conn, $_POST['email']);
 $password = mysqli_real_escape_string($conn, $_POST['password']);
 
+$password = md5($password . "lalala");
+
 $sql = "INSERT INTO users(name, surname, email, password) VALUES ('$name','$surname','$email','$password')";
 
 if (mysqli_query($conn, $sql)) {
@@ -14,3 +16,4 @@ if (mysqli_query($conn, $sql)) {
 } else {
     echo 'query error:' . mysqli_error($conn);
 }
+header('Location: /');
