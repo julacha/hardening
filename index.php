@@ -58,22 +58,22 @@ require_once 'login.php';
                         <div class="carousel-item active">
                             <img src="img/ma-1.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <h5>Imunitātes stiprināšana</h5>
+                                <p>Rūdīšana uzlabo imūno aizsardzību, stiprina ķermeni un garu</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="img/img1.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
+                                <h5>Izturība pret stresu</h5>
+                                <p>Rūdīšana paaugstina centrālās nervu sistēmas tonusu un uzlabo garastāvokli</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="img/img2.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
+                                <h5>Veselība un enerģija</h5>
+                                <p>Rūdīšana uzlabo asinsriti un normalizē vielmaiņu</p>
                             </div>
                         </div>
                         <div id="loginForm" class="log-box" style="background-color:white;">
@@ -99,38 +99,53 @@ require_once 'login.php';
             </div>
         </div>
     </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Rudīšanas dienasgrāmata <span class="text-muted">Individuālais palīgs</span></h2>
+            <p class="lead">Iespējams, katrs no mums vismaz vienu reizi savā dzīvē mēģināja rūdīt, bet lielākā daļa padevās pēc pirmajiem mēģinājumiem. Bet atlikusī daļa - tie, kas padarīja rūdīšanu par parastu procedūru - var lepoties ar spēcīgu imunitāti, garīgo un fizisko veselību. Šī online dienasgrāmata palīdzēs tev sistematiski un pakapeniski apgūt jauno izaicinājumu! Pievinojies uzradot savu lidzšīnojo līmeni un sac jauno dzīvi!</p>
+        </div>
+        <div class="col-md-5">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+            </svg>
+
+        </div>
+    </div>
+    <hr class="featurette-divider">
     <div class="row">
-        <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="70" height="70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 70x70" preserveAspectRatio="xMidYMid slice" focusable="false">
                 <title>Placeholder</title>
                 <rect width="100%" height="100%" fill="#FFFFFF"></rect><text x="36%" y="50%" fill="#000" dy=".3em">1</text>
             </svg>
-            <h4>Подготови-<br>тельный этап</h4>
+            <h4>Sagatavošanās posms</h4>
             <p>Apraksts</p>
-            <a class="btn btn-secondary" href="#">Описание »</a>
+            <a class="btn btn-secondary" href="#">Apraksts »</a>
         </div>
-        <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="70" height="70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 70x70" preserveAspectRatio="xMidYMid slice" focusable="false">
                 <title>Placeholder</title>
                 <rect width="100%" height="100%" fill="#FFFFFF"></rect><text x="36%" y="50%" fill="#777" dy=".3em">2</text>
             </svg>
-            <h4>Контрастные<br>процедуры</h4>
+            <h4>Kontrasta procedūras</h4>
             <p>Apraksts</p>
-            <a class="btn btn-secondary" href="#">Описание »</a>
+            <a class="btn btn-secondary" href="#">Apraksts »</a>
         </div>
-        <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="70" height="70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 70x70" preserveAspectRatio="xMidYMid slice" focusable="false">
                 <title>Placeholder</title>
                 <rect width="100%" height="100%" fill="#FFFFFF"></rect><text x="36%" y="50%" fill="#777" dy=".3em">3</text>
             </svg>
-            <h4>Обливания</h4>
+            <h4>Duša</h4>
             <p>Apraksts</p>
-            <a class="btn btn-secondary" href="#">Описание »</a>
+            <a class="btn btn-secondary" href="#">Apraksts »</a>
         </div>
-        <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="70" height="70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 70x70" preserveAspectRatio="xMidYMid slice" focusable="false">
                 <title>Placeholder</title>
                 <rect width="100%" height="100%" fill="#FFFFFF"></rect><text x="36%" y="50%" fill="#777" dy=".3em">4</text>
             </svg>
-            <h4>«Моржевание»</h4>
+            <h4>Ziemas peldēšana</h4>
             <p>Apraksts</p>
-            <a class="btn btn-secondary" href="#">Описание »</a>
+            <a class="btn btn-secondary" href="#">Apraksts »</a>
         </div>
     </div>
     </div>
@@ -176,16 +191,10 @@ require_once 'login.php';
         </div>
         <div class="col-sm-8" style="background-color:orange;">
             <article class="blog-post">
-                <h2 class="blog-post-title">Title</h2>
                 <p class="blog-post-meta"> Mark, date</p>
                 <div class="question-list">
                     <div class="template">
                         <pre></pre>
-                        <!-- <a href="#" class="option"><svg viewBox="0 0 3 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="1.5" cy="1.5" r="1.5" fill="black" />
-                                <circle cx="1.5" cy="6.5" r="1.5" fill="black" />
-                                <circle cx="1.5" cy="11.5" r="1.5" fill="black" />
-                            </svg> -->
                         </a>
                         <a href="#" class="save">Save</a>
                         <div class="options">
@@ -202,7 +211,7 @@ require_once 'login.php';
         <div class="col-sm-12">
             <footer class="container">
                 <p class="float-end"><a href="#">Back to top</a></p>
-                <p>© 2017–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+                <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
             </footer>
         </div>
     </div>

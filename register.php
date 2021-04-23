@@ -16,4 +16,4 @@ if (mysqli_query($conn, $sql)) {
 } else {
     echo 'query error:' . mysqli_error($conn);
 }
-header('Location: /diary.php');
+header('Location: /');
