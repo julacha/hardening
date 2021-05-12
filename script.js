@@ -1,11 +1,32 @@
 let newques  = document.querySelector('.new-question');
+let template = document.querySelector(".template");
+let count = localStorage.getItem("quest_count");
+
+if (count === null && count != Number(count)){
+  count = 0;
+}
+
 function onQuestion (event){
   event.preventDefault();
-  let userquestion = this.querySelector('.new-question textarea').value;
-  let question  = document.createElement("pre");
-  console.log(question);
-  question.textContent = userquestion;
-  document.querySelector('.question-list').append(question);
+  let userquestion = this.querySelector('.new-question textarea');
+  count++;
+  addQuestion(userquestion.value, count);
+  userquestion.value = ""; 
+}
+function addQuestion(text, order){
+  if(text !== ""){
+  let question  = template.cloneNode(true);
+  question.classList.remove("template");
+  question.setAttribute('data-order', order);
+  question.querySelector("pre").textContent = text;
+  document.querySelector('.question-list').append(question); 
+  localStorage.setItem("question["+ order +"]", text);
+  localStorage.setItem("quest_count", order);
+}
+}
+
+for (let i = 1; i <= count; i++){
+addQuestion(localStorage.getItem("question["+ i +"]"),i);
 }
 let options = { 
   'backdrop' : 'static'

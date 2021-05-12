@@ -98,6 +98,9 @@ pre{
     border: 1 px solid salmon;
     background: sandybrown;
 }
+.template{
+    display: none;
+}
 .col-sm{
     border:#eee solid 1px;
     border-radius: 5px;

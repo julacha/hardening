@@ -195,12 +195,6 @@ require_once 'login.php';
                 <div class="question-list">
                     <div class="template">
                         <pre></pre>
-                        </a>
-                        <a href="#" class="save">Save</a>
-                        <div class="options">
-                            <a href="#" class="edit">edit</a>
-                            <a href="#" class="remove">remove</a>
-                        </div>
                     </div>
                 </div>
                 <hr>
