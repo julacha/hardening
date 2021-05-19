@@ -23,7 +23,7 @@ require_once 'login.php';
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+                    <div class="navbar-collapse collapse" id="navbarCollapse">
                         <ul class="navbar-nav me-auto mb-2 mb-md-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -106,11 +106,7 @@ require_once 'login.php';
             <p class="lead">Iespējams, katrs no mums vismaz vienu reizi savā dzīvē mēģināja rūdīt, bet lielākā daļa padevās pēc pirmajiem mēģinājumiem. Bet atlikusī daļa - tie, kas padarīja rūdīšanu par parastu procedūru - var lepoties ar spēcīgu imunitāti, garīgo un fizisko veselību. Šī online dienasgrāmata palīdzēs tev sistematiski un pakapeniski apgūt jauno izaicinājumu! Pievinojies uzradot savu lidzšīnojo līmeni un sac jauno dzīvi!</p>
         </div>
         <div class="col-md-5">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
-
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="img/Rectangle.png">
         </div>
     </div>
     <hr class="featurette-divider">
@@ -120,7 +116,6 @@ require_once 'login.php';
                 <rect width="100%" height="100%" fill="#FFFFFF"></rect><text x="36%" y="50%" fill="#000" dy=".3em">1</text>
             </svg>
             <h4>Sagatavošanās posms</h4>
-            <p>Apraksts</p>
             <a class="btn btn-secondary" href="#">Apraksts »</a>
         </div>
         <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="70" height="70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 70x70" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -128,7 +123,6 @@ require_once 'login.php';
                 <rect width="100%" height="100%" fill="#FFFFFF"></rect><text x="36%" y="50%" fill="#777" dy=".3em">2</text>
             </svg>
             <h4>Kontrasta procedūras</h4>
-            <p>Apraksts</p>
             <a class="btn btn-secondary" href="#">Apraksts »</a>
         </div>
         <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="70" height="70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 70x70" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -136,7 +130,6 @@ require_once 'login.php';
                 <rect width="100%" height="100%" fill="#FFFFFF"></rect><text x="36%" y="50%" fill="#777" dy=".3em">3</text>
             </svg>
             <h4>Duša</h4>
-            <p>Apraksts</p>
             <a class="btn btn-secondary" href="#">Apraksts »</a>
         </div>
         <div class="col-sm round"><svg class="bd-placeholder-img rounded-circle" width="70" height="70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 70x70" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -144,7 +137,6 @@ require_once 'login.php';
                 <rect width="100%" height="100%" fill="#FFFFFF"></rect><text x="36%" y="50%" fill="#777" dy=".3em">4</text>
             </svg>
             <h4>Ziemas peldēšana</h4>
-            <p>Apraksts</p>
             <a class="btn btn-secondary" href="#">Apraksts »</a>
         </div>
     </div>
@@ -155,7 +147,7 @@ require_once 'login.php';
             <div class="mb-3" id="bgcenter">
                 <!-- Button trigger modal -->
                 <button id="message" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                    Запустить модальное окно
+                    Uzdot jautājumu
                 </button>
 
                 <!-- Modal -->
@@ -170,10 +162,10 @@ require_once 'login.php';
                             </div>
                             <div class="modal-body">
                                 <div class="new-block">
-                                    <div class="logo">
-                                        <!-- <img src="#" alt="logo"> -->
-                                    </div>
-                                    <input type="date" class="form-control" id="date" name="date" placeholder="Дата" required>
+                                    <!-- <div class="logo">
+                                        <img src="#" alt="logo">
+                                    </div> -->
+                                    <div id="date"></div>
                                 </div>
                                 <form action="" class="new-question">
                                     <textarea name="question"></textarea>
@@ -191,10 +183,15 @@ require_once 'login.php';
         </div>
         <div class="col-sm-8" style="background-color:orange;">
             <article class="blog-post">
-                <p class="blog-post-meta"> Mark, date</p>
+                <p class="blog-post-meta">
+                <div class="datelist">
+                    <div></div>
+                </div>
+                </p>
                 <div class="question-list">
                     <div class="template">
-                        <pre></pre>
+                        <pre>
+                        </pre>
                     </div>
                 </div>
                 <hr>

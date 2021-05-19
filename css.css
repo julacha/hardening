@@ -34,25 +34,41 @@
     z-index: 0;
 }
 
-.auth-box{
+/* .auth-box{
 display: none;
+} */
+.form-row{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.form-control{
+    margin-top: 0rem;
+    margin-bottom: 0;
+}
+.form-group {
+    margin-bottom: 0;
+}
+.btn{
+    margin-top: 1rem;
+}
+.btn-secondary{
+    margin-bottom: 2rem;
 }
 .auth-box.active{
     display: block;
     width: 30rem;
-    height: 20rem;
+    height: 25rem;
     position: relative;
     margin: 120px auto;
     z-index: 100;
 }
-
 .auth-box{
     display: none;
     }
 .auth-box.active{
     display: block;
     width: 30rem;
-    height: 20rem;
+    height: 23rem;
     position: relative;
     margin: 120px auto;
     z-index: 100;
@@ -62,14 +78,16 @@ text{
     font-weight: 700;
     fill:#007bff;
 }
-
+.logform{
+    padding-top: 50px;
+}
 .log-box{
     display: none;
     }
 .log-box.active{
     display: block;
     width: 30rem;
-    height: 20rem;
+    height: 25rem;
     position: relative;
     margin: 120px auto;
     z-index: 100;
@@ -99,6 +117,9 @@ pre{
     background: sandybrown;
 }
 .template{
+    display: none;
+}
+.date-list{
     display: none;
 }
 .col-sm{
@@ -162,4 +183,5 @@ pre{
     flex-wrap: wrap;
     margin-right: 15px;
     margin-left: 15px;
+    margin-top: 0.5rem;
 }
