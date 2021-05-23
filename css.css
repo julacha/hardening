@@ -127,6 +127,10 @@ pre{
     border-radius: 5px;
     margin: 2px;
 }
+footer{
+    display:flex; 
+    justify-content: space-between;
+}
 
 
   /* Featurettes

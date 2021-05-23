@@ -1,6 +1,6 @@
 let newques  = document.querySelector('.new-question');
 let template = document.querySelector(".template");
-let count = localStorage.getItem("quest_count");
+let count = localStorage.getItem("quest_count date_count");
 let dateElement = document.getElementById("date");
 let datelist = document.querySelector(".datelist");
 if (count === null && count != Number(count)){
@@ -10,12 +10,12 @@ if (count === null && count != Number(count)){
 function onQuestion (event){
   event.preventDefault();
   let userquestion = this.querySelector('.new-question textarea');
-  let userdata = this.querySelector(".new-block date");
+  let userdata = document.querySelector("#date");
   // console.log(userquestion);
   // console.log(questiondate);
   count++;
   addQuestion(userquestion.value, count);
-  addDate(today, count);
+  addDate(userdata.value, count);
   // console.log(dateElement.textContent);
   userquestion.value = "";
 }
@@ -40,20 +40,21 @@ today = dd + '/' + mm + '/' + yyyy;
 dateElement.textContent = today;
 
 function addDate(date, order){
-    let newdate = datelist.cloneNode(true);
-    newdate.classList.remove("date-list");
+    let newdate = document.createElement("div");
+    // newdate.classList.remove("date-list");
+    // newdate.textContent = userdata.value;
+    newdate.textContent = dateElement.textContent;
+    //newdate.textContent = date.value;
     newdate.setAttribute('data-order', order);
-    newdate.querySelector("div").textContent = date;
     document.querySelector(".question-list").append(newdate);
     localStorage.setItem("newdate["+ order +"]", date);
-    localStorage.setItem("date_count", order);
+    localStorage.setItem("date_count", date);
 }
 for (let i = 1; i <= count; i++){
 addQuestion(localStorage.getItem("question["+ i +"]"),i);
+addDate(localStorage.getItem("newdate["+ i +"]"),i);
 }
-for (let i = 1; i <= count; i++){
-  addDate(localStorage.getItem("newdate["+ i +"]"),i);
-}
+
 let options = { 
   'backdrop' : 'static'
 }

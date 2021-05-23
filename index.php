@@ -184,17 +184,15 @@ require_once 'login.php';
         <div class="col-sm-8" style="background-color:orange;">
             <article class="blog-post">
                 <p class="blog-post-meta">
-                <div class="datelist">
-                    <div></div>
-                </div>
                 </p>
                 <div class="question-list">
                     <div class="template">
-                        <pre>
-                        </pre>
+                        <div></div>
+                        <pre></pre>
                     </div>
                 </div>
-                <hr>
+            </article>
+            <hr>
         </div>
     </div>
     <hr>
