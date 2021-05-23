@@ -187,7 +187,7 @@ require_once 'login.php';
                 </p>
                 <div class="question-list">
                     <div class="template">
-                        <div></div>
+                        <!-- <div></div> -->
                         <pre></pre>
                     </div>
                 </div>

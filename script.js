@@ -39,16 +39,13 @@ let yyyy = today.getFullYear();
 today = dd + '/' + mm + '/' + yyyy;
 dateElement.textContent = today;
 
-function addDate(date, order){
+function addDate(userdate, dateorder){
     let newdate = document.createElement("div");
-    // newdate.classList.remove("date-list");
-    // newdate.textContent = userdata.value;
     newdate.textContent = dateElement.textContent;
-    //newdate.textContent = date.value;
-    newdate.setAttribute('data-order', order);
+    newdate.setAttribute('data-order', dateorder);
     document.querySelector(".question-list").append(newdate);
-    localStorage.setItem("newdate["+ order +"]", date);
-    localStorage.setItem("date_count", date);
+    localStorage.setItem("newdate["+ dateorder +"]", newdate.textContent);
+    localStorage.setItem("date_count", dateorder);
 }
 for (let i = 1; i <= count; i++){
 addQuestion(localStorage.getItem("question["+ i +"]"),i);
