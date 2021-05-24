@@ -16,7 +16,7 @@ function onQuestion (event){
   count++;
   addQuestion(userquestion.value, count);
   addDate(userdata.value, count);
-  // console.log(dateElement.textContent);
+  console.log(dateElement.textContent);
   userquestion.value = "";
 }
 function addQuestion(text, order){
@@ -41,10 +41,12 @@ dateElement.textContent = today;
 
 function addDate(userdate, dateorder){
     let newdate = document.createElement("div");
-    newdate.textContent = dateElement.textContent;
+    userdate = dateElement.textContent;
+    //newdate.querySelector("div").textContent = userdate;
+    console.log(userdate);
     newdate.setAttribute('data-order', dateorder);
     document.querySelector(".question-list").append(newdate);
-    localStorage.setItem("newdate["+ dateorder +"]", newdate.textContent);
+    localStorage.setItem("newdate["+ dateorder +"]", userdate);
     localStorage.setItem("date_count", dateorder);
 }
 for (let i = 1; i <= count; i++){
