@@ -1,6 +1,7 @@
 let newques  = document.querySelector('.new-question');
 let template = document.querySelector(".template");
-let count = localStorage.getItem("quest_count date_count");
+let count = localStorage.getItem("quest_count");
+let datecount = localStorage.getItem("date_count");
 let dateElement = document.getElementById("date");
 let datelist = document.querySelector(".datelist");
 if (count === null && count != Number(count)){
@@ -14,8 +15,9 @@ function onQuestion (event){
   // console.log(userquestion);
   // console.log(questiondate);
   count++;
+  datecount++;
   addQuestion(userquestion.value, count);
-  addDate(userdata.value, count);
+  addDate(userdata.value, datecount);
   console.log(dateElement.textContent);
   userquestion.value = "";
 }
@@ -42,7 +44,7 @@ dateElement.textContent = today;
 function addDate(userdate, dateorder){
     let newdate = document.createElement("div");
     userdate = dateElement.textContent;
-    //newdate.querySelector("div").textContent = userdate;
+    newdate.textContent = userdate;
     console.log(userdate);
     newdate.setAttribute('data-order', dateorder);
     document.querySelector(".question-list").append(newdate);
@@ -51,9 +53,10 @@ function addDate(userdate, dateorder){
 }
 for (let i = 1; i <= count; i++){
 addQuestion(localStorage.getItem("question["+ i +"]"),i);
-addDate(localStorage.getItem("newdate["+ i +"]"),i);
 }
-
+for (let i = 1; i <= count; i++){
+  addDate(localStorage.getItem("newdate["+ i +"]"),i);
+  }
 let options = { 
   'backdrop' : 'static'
 }
